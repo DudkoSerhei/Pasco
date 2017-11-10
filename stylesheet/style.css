@@ -1,4 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 * {
   padding: 0;
   margin: 0;
+}
+body {
+  font-family: 'Montserrat';
+}
+.main {
+  max-width: 1175px;
+  margin: 0 auto;
+}
+
+/*styles*/
+.header {
+  background-color: #1f1f1f;
+  padding: 13px 0;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__socials {
+  display: flex;
+  align-items: center;
+}
+.header__icon {
+  display: flex;
+  margin-right: 15px;
+}
+.header__icon svg {
+  fill: #747474;
+  width: 16px;
+  height: 16px;
+}
+.header__tabs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__tabs .header__icon {
+  margin-right: 7px;
+}
+.header__signin {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.header__signin::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 1px;
+  background-color: #747474;
+  right: -15px;
+}
+.header__text {
+  color: #747474;
+  font-size: 16px;
+}
+.header__lang {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header__lang .header__text {
+  margin-right: 4px;
+}
+.header__arrow {
+  background: url('../images/icon/arrow.svg') no-repeat 0 0;
+  background-size: cover;
+  width: 10px;
+  height: 10px;
 }
