@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
   padding: 0;
@@ -12,7 +12,7 @@ body {
   margin: 0 auto;
 }
 
-/*styles*/
+/*header*/
 .header {
   background-color: #1f1f1f;
   padding: 13px 0;
@@ -55,7 +55,7 @@ body {
   position: absolute;
   height: 30px;
   width: 1px;
-  background-color: #747474;
+  background-color: #5e5d5d;
   right: -15px;
 }
 .header__text {
@@ -75,4 +75,169 @@ body {
   background-size: cover;
   width: 10px;
   height: 10px;
+}
+
+/*welcome*/
+.welcome {
+  background: url('../images/img/welcome.jpg') no-repeat 0 0;
+  background-size: cover;
+}
+.welcome-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0 70px;
+}
+.welcome__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+}
+.welcome__logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
+.welcome__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.welcome__list {
+  position: relative;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0 20px 0 15px;
+  cursor: pointer;
+}
+.welcome__list::before {
+  content: "";
+  position: absolute;
+  background: url('../images/icon/arrow_white.svg') no-repeat 0 0;
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+  right: 0;
+  top: 4px;
+}
+.welcome__tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome__icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.welcome__icon::after {
+  content: "";
+  position: relative;
+  width: 1px;
+  height: 30px;
+  background-color: #5e5d5d;
+  right: -15px;
+}
+.welcome__icon:last-child {
+  margin-right: 15px;
+}
+.welcome__icon:last-child::after {
+  display: none;
+}
+.welcome__icon svg {
+  fill: #fff;
+  stroke: #fff;
+  width: 20px;
+  height: 20px;
+}
+.welcome__description {
+  margin-top: 250px;
+  color: #cdcdcd;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+.welcome__title {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  width: 65%;
+  text-align: center;
+}
+.welcome__btn {
+  margin-top: 40px;
+  background-color: #38419b;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  padding: 17px 30px;
+  cursor: pointer;
+}
+.welcome__item {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome__photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.welcome__second-title {
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #fff;
+}
+.welcome__data {
+  margin-top: 15px;
+  color: #959595;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.welcome-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.welcome-footer__item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.welcome-footer__item:last-child {
+  margin-right: 0;
+}
+.welcome-footer__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.welcome-footer__icon svg {
+  width: 15px;
+  height: 15px;
+  fill: #959595;
+  stroke: #959595;
+}
+.welcome-footer__text {
+  color: #959595;
+  font-size: 12px;
+  letter-spacing: 0.5px;
 }
