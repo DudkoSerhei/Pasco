@@ -51,7 +51,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 45px 0;
+  margin-top: 45px;
 }
 .more__title {
   font-size: 16px;
@@ -537,7 +537,7 @@ body {
   border-radius: 5px 0 0 5px;
 }
 .blog__main {
-  width: 70%;
+  width: 313px;
   padding: 25px 0 0 40px;
   overflow: hidden;
 }
@@ -854,4 +854,19 @@ body {
 .popup__text {
   font-size: 16px;
   margin-left: 5px;
+}
+
+/*Widget*/
+.widget {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.widget__item {
+  width: 12.5%;
+  height: 180px;
+}
+.widget__img {
+  max-width: 100%;
+  max-height: 100%;
 }
