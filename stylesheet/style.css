@@ -98,7 +98,7 @@ body {
 .social__icon svg {
   fill: #747474;
   width: 16px;
-  height: 16px;
+  height: 17px;
 }
 
 /*Signin*/
@@ -140,10 +140,10 @@ body {
   color: #747474;
   font-size: 16px;
 }
-.profile__text_lang {
+.language__text {
   margin-right: 4px;
 }
-.profile__arrow {
+.language__arrow {
   background: url('../images/icon/arrow.svg') no-repeat 0 0;
   background-size: cover;
   width: 10px;
@@ -1095,4 +1095,36 @@ body {
   padding: 15px 0;
   cursor: pointer;
   outline: 0;
+}
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 0;
+  background-color: #333333;
+  color: #fff;
+}
+.footer__nav .nav__item:before {
+  display: none;
+}
+.footer__controls {
+  display: flex;
+  align-items: center;
+}
+.footer__input {
+  background-color: transparent;
+  border: 1px solid #818181;
+  color: #818181;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 12px 20px;
+  outline: 0;
+  border-radius: 30px;
+  margin-right: 70px;
+}
+.footer__text {
+  color: #818181;
+  padding-left: 10px;
 }
