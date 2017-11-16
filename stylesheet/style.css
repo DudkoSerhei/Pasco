@@ -869,4 +869,42 @@ body {
 .widget__img {
   max-width: 100%;
   max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*Subscribe*/
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url('../images/img/form-bg.jpg') no-repeat 0 0;
+  background-size: cover;
+  padding: 80px 0;
+}
+.subscribe__title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #fff;
+}
+.subscribe__input {
+  border: 1px solid #7c7f7f;
+  border-radius: 30px;
+  background-color: transparent;
+  outline: 0;
+  padding: 15.5px 20px;
+  color: #7c7f7f;
+  width: 270px;
+  font-size: 16px;
+  font-family: 'Open Sans';
+}
+.subscribe__btn {
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background-color: #38419b;
+  outline: 0;
+  padding: 12.5px 35px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
 }
