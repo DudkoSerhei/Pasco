@@ -214,6 +214,9 @@ body {
   align-items: center;
   cursor: pointer;
   margin-right: 30px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
 }
 .controls__button::after {
   content: "";
@@ -351,7 +354,7 @@ body {
   background-color: #f5f5f5;
   padding: 30px 0 40px;
 }
-.blog__content {
+.blog__section {
   width: 70%;
 }
 .blog-post {
@@ -807,9 +810,11 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.blog-tags__item {
+.blog-tags__btn {
   padding: 10px 15px;
   background-color: #ededed;
+  border: 1px solid transparent;
+  outline: 0;
   border-radius: 5px;
   font-size: 14px;
   margin: 0 10px 10px 0;
