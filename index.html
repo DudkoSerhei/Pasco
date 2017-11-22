@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="./stylesheet/style.css">
   <title>Pasco</title>
 </head>
@@ -71,26 +70,30 @@
       </ul>
       <div class="profile">
         <div class="signin profile__signin">
-          <span class="social__icon profile__icon">
+          <div class="social__icon profile__icon">
             <svg aria-label="user" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
               <linearGradient gradientUnits="userSpaceOnUse" id="a" x2="512" y1="256" y2="256"><stop offset="0"/><stop offset="1"/></linearGradient><circle cx="256" cy="256"r="256"/><linearGradient gradientUnits="userSpaceOnUse" id="b" x1="42.667" x2="469.333" y1="256.001" y2="256.001">
                 <stop offset="0"/><stop offset="1"/></linearGradient><path d="M256 469.334c-117.63 0-213.333-95.702-213.333-213.333S138.37 42.668 256 42.668c117.636 0 213.333 95.702 213.333 213.334S373.636 469.335 256 469.335z"/><g><circle cx="256" cy="195.671" r="56.64" fill="black" /><path fill="black" d="M323.383 261.077c-.893-.607-2.69-1.774-2.69-1.774-14.478 20.1-38.082 33.212-64.693 33.212-26.613 0-50.22-13.114-64.697-33.22 0 0-1.51.99-2.26 1.495C157.045 282.343 136 318.908 136 360.387v12.583h240v-12.583c0-41.296-20.86-77.72-52.617-99.31z"/></g>
             </svg>
-          </span>
-          <span class="profile__text">
+          </div>
+          <p class="profile__text">
             SIGN IN
-          </span>
+          </p>
         </div>
         <div class="language profile__language">
-          <span class="social__icon profile__icon">
+          <div class="social__icon profile__icon">
             <svg aria-label="language" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
               <title/><path d="M13.502 11c.26-.623.426-1.296.48-2H11.99c-.027.697-.112 1.368-.246 2zm.48-3c-.054-.704-.22-1.377-.48-2h-1.758c.134.632.22 1.303.246 2zm-1.004-3H11.48c-.29-.918-.692-1.723-1.175-2.365C11.4 3.16 12.327 3.983 12.978 5zM4.695 2.635C3.6 3.16 2.673 3.983 2.022 5H3.52c.29-.918.692-1.723 1.175-2.365zM1.498 6c-.26.623-.426 1.296-.48 2H3.01c.027-.697.112-1.368.246-2zm-.48 3c.054.704.22 1.377.48 2h1.758c-.134-.632-.22-1.303-.246-2zm1.004 3c.65 1.017 1.577 1.84 2.673 2.365-.483-.642-.885-1.447-1.176-2.365zM0 8.5V8h.016C.263 4.256 3.256 1.263 7 1.016V1h1v.016c3.744.247 6.737 3.24 6.984 6.984H15v1h-.016c-.247 3.744-3.24 6.737-6.984 6.984V16H7v-.016C3.256 15.737.263 12.744.016 9H0zm10.305 5.865c1.096-.525 2.022-1.348 2.673-2.365H11.48c-.29.918-.692 1.723-1.175 2.365zM10.45 5C9.913 3.443 9.03 2.34 8 2.066V5zM7 2.066C5.97 2.34 5.087 3.443 4.55 5H7V2.066zM7 12v2.934C5.97 14.66 5.087 13.557 4.55 12zm1 2.934V12h2.45c-.537 1.557-1.42 2.66-2.45 2.934zM10.732 11H8V9h2.99c-.03.704-.118 1.377-.258 2zM7 9v2H4.268c-.14-.623-.23-1.296-.258-2zm3.99-1H8V6h2.732c.14.623.23 1.296.258 2zM7 6v2H4.01c.03-.704.118-1.377.258-2zm0 0" fill-rule="evenodd"/>
             </svg>
-          </span>
-          <span class="profile__text language__text">
+          </div>
+          <p class="profile__text language__text">
             ENG
+          </p>
+          <span class="language__arrow">
+            <svg aria-label="arrow" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.77 23.795L5.185 14.21c-.88-.88-.88-2.317 0-3.195l.8-.8c.877-.88 2.316-.88 3.194 0l7.314 7.314 7.316-7.316c.878-.878 2.317-.878 3.194 0l.8.8c.88.88.88 2.317 0 3.196l-9.587 9.585c-.47.472-1.104.682-1.723.647-.62.035-1.25-.175-1.724-.647z"/>
+            </svg>
           </span>
-          <span class="language__arrow"></span>
         </div>
       </div>
     </div>
@@ -613,16 +616,14 @@
             </div>
           </div>
         </div>
-        <div class="more">
-          <div class="main">
-            <h4 class="more__title">More</h4>
-            <div class="more__icon">
-              <svg aria-label="arrow" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-                <title/><path d="M8 0L6.6 1.4 12.2 7H0v2h12.2l-5.6 5.6L8 16l8-8-8-8z" fill-rule="evenodd"/>
-              </svg>
-            </div>
+        <button class="more">
+          <h4 class="more__title">More</h4>
+          <div class="more__icon">
+            <svg aria-label="arrow" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+              <title/><path d="M8 0L6.6 1.4 12.2 7H0v2h12.2l-5.6 5.6L8 16l8-8-8-8z" fill-rule="evenodd"/>
+            </svg>
           </div>
-        </div>
+        </button>
       </section>
       <aside class="blog__aside">
         <div class="blog__main">
@@ -632,29 +633,29 @@
               placeholder="Search">
             </label>
           </form>
-          <div class="blog-category">
+          <ul class="blog-category">
             <h2 class="blog__second-title">categories</h3>
-            <div class="blog-category__item">
+            <li class="blog-category__item">
               <p class="blog-category__text">Photography</p>
               <p class="blog-category__number">195</p>
-            </div>
-            <div class="blog-category__item">
+            </li>
+            <li class="blog-category__item">
               <p class="blog-category__text">Illustration</p>
               <p class="blog-category__number">15</p>
-            </div>
-            <div class="blog-category__item">
+            </li>
+            <li class="blog-category__item">
               <p class="blog-category__text">Graphic Design</p>
               <p class="blog-category__number">36</p>
-            </div>
-            <div class="blog-category__item">
+            </li>
+            <li class="blog-category__item">
               <p class="blog-category__text">Web design</p>
               <p class="blog-category__number">220</p>
-            </div>
-            <div class="blog-category__item">
+            </li>
+            <li class="blog-category__item">
               <p class="blog-category__text">Videography</p>
               <p class="blog-category__number">17</p>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="blog-subscribe">
             <h2 class="blog__second-title">subscribe</h2>
             <label for="input-1" class="blog-subscribe__label">
@@ -1151,18 +1152,24 @@
       <div class="footer__controls">
         <input type="text" class="footer__input" placeholder="Search">
         <div class="language profile__footer">
-          <span class="social__icon footer__icon">
+          <div class="social__icon footer__icon">
             <svg aria-label="language" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
               <title/><path d="M13.502 11c.26-.623.426-1.296.48-2H11.99c-.027.697-.112 1.368-.246 2zm.48-3c-.054-.704-.22-1.377-.48-2h-1.758c.134.632.22 1.303.246 2zm-1.004-3H11.48c-.29-.918-.692-1.723-1.175-2.365C11.4 3.16 12.327 3.983 12.978 5zM4.695 2.635C3.6 3.16 2.673 3.983 2.022 5H3.52c.29-.918.692-1.723 1.175-2.365zM1.498 6c-.26.623-.426 1.296-.48 2H3.01c.027-.697.112-1.368.246-2zm-.48 3c.054.704.22 1.377.48 2h1.758c-.134-.632-.22-1.303-.246-2zm1.004 3c.65 1.017 1.577 1.84 2.673 2.365-.483-.642-.885-1.447-1.176-2.365zM0 8.5V8h.016C.263 4.256 3.256 1.263 7 1.016V1h1v.016c3.744.247 6.737 3.24 6.984 6.984H15v1h-.016c-.247 3.744-3.24 6.737-6.984 6.984V16H7v-.016C3.256 15.737.263 12.744.016 9H0zm10.305 5.865c1.096-.525 2.022-1.348 2.673-2.365H11.48c-.29.918-.692 1.723-1.175 2.365zM10.45 5C9.913 3.443 9.03 2.34 8 2.066V5zM7 2.066C5.97 2.34 5.087 3.443 4.55 5H7V2.066zM7 12v2.934C5.97 14.66 5.087 13.557 4.55 12zm1 2.934V12h2.45c-.537 1.557-1.42 2.66-2.45 2.934zM10.732 11H8V9h2.99c-.03.704-.118 1.377-.258 2zM7 9v2H4.268c-.14-.623-.23-1.296-.258-2zm3.99-1H8V6h2.732c.14.623.23 1.296.258 2zM7 6v2H4.01c.03-.704.118-1.377.258-2zm0 0" fill-rule="evenodd"/>
             </svg>
-          </span>
+          </div>
           <p class="footer__text language__text">
             ENG
           </p>
-          <span class="language__arrow"></span>
+          <span class="language__arrow">
+            <svg aria-label="arrow" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.77 23.795L5.185 14.21c-.88-.88-.88-2.317 0-3.195l.8-.8c.877-.88 2.316-.88 3.194 0l7.314 7.314 7.316-7.316c.878-.878 2.317-.878 3.194 0l.8.8c.88.88.88 2.317 0 3.196l-9.587 9.585c-.47.472-1.104.682-1.723.647-.62.035-1.25-.175-1.724-.647z"/>
+            </svg>
+          </span>
         </div>
       </div>
     </div>
   </footer>
 </body>
+<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./stylesheet/styles.css">
 </html>
