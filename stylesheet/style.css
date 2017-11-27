@@ -209,13 +209,37 @@ body {
   background-color: #1e276d;
   border-color: #38419b;
 }
+.welcome__mobile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.welcome__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome__line {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 3px;
+}
+.welcome__line:last-child {
+  margin-bottom: 0;
+}
+.welcome__mobile .logo {
+  color: #fff;
+}
 /*controls*/
 .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.controls__button {
+.controls__btn {
   position: relative;
   display: flex;
   align-items: center;
@@ -225,7 +249,7 @@ body {
   border: 0;
   outline: 0;
 }
-.controls__button::after {
+.controls__btn::after {
   content: "";
   position: relative;
   width: 1px;
@@ -233,20 +257,20 @@ body {
   background-color: #5e5d5d;
   right: -15px;
 }
-.controls__button:last-child {
+.controls__btn:last-child {
   margin-right: 15px;
 }
-.controls__button:last-child::after {
+.controls__btn:last-child::after {
   display: none;
 }
-.controls__button svg {
+.controls__btn svg {
   fill: #fff;
   stroke: #fff;
   width: 20px;
   height: 20px;
   transition: all 0.3s ease-in-out;
 }
-.controls__button:hover svg {
+.controls__btn:hover svg {
   fill: black;
   stroke: black;
 }
@@ -257,6 +281,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+.user:hover {
+  transform: scale3d(1.3,1.3,1.3);
 }
 .user__photo {
   width: 50px;
@@ -336,4 +365,57 @@ body {
 }
 .user__comments:hover .user__text, .user__like:hover .user__text {
   color: black;
+}
+
+/*media*/
+@media(max-width:1239px) {
+  .main {
+    min-width: 980px;
+    max-width: 980px;
+  }
+}
+@media(max-width:1023px) {
+  .main {
+    min-width: 728px;
+    max-width: 728px;
+  }
+  .header {
+    background-color: #38419b;
+  }
+  .socials {
+    display: none;
+  }
+  .profile {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .profile__signin {
+    margin-right: 0;
+  }
+  .profile__signin::before {
+    display: none;
+  }
+  .profile svg {
+    fill: #a1a4ca;
+  }
+  .profile__text {
+    color: #a1a4ca;
+  }
+  .welcome__header, .welcome__description, .user {
+    display: none;
+  }
+  .welcome__mobile {
+    display: flex;
+  }
+  .welcome {
+    background: none;
+    background-color: #4652b1;
+    padding: 26px 0;
+  }
+}
+@media(max-width:767px) {
+  .main {
+    min-width: 90%;
+    max-width: 90%;
+  }
 }
