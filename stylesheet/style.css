@@ -66,7 +66,7 @@ body {
   margin-right: 15px;
 }
 .header__icon:hover svg {
-  fill: black;
+  fill: #4652b1;
 }
 /*socials*/
 .socials {
@@ -103,10 +103,10 @@ body {
   right: -15px;
 }
 .signin:hover .profile__text {
-  color: black;
+  color: #4652b1;
 }
 .signin:hover svg {
-  fill: black;
+  fill: #4652b1;
 }
 
 /*Language*/
@@ -117,10 +117,10 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .language:hover .profile__text {
-  color: black;
+  color: #4652b1;
 }
 .language:hover svg {
-  fill: black;
+  fill: #4652b1;
 }
 
 /*profile */
@@ -209,6 +209,9 @@ body {
   background-color: #1e276d;
   border-color: #38419b;
 }
+.welcome__btn:focus {
+  border-radius: 30px;
+}
 .welcome__mobile {
   display: none;
   justify-content: space-between;
@@ -220,6 +223,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.welcome__menu:hover .welcome__line {
+  background-color: #ca4f86;
 }
 .welcome__line {
   width: 20px;
@@ -271,8 +279,8 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .controls__btn:hover svg {
-  fill: black;
-  stroke: black;
+  fill: #4652b1;
+  stroke: #4652b1;
 }
 
 /*user*/
@@ -327,14 +335,14 @@ body {
   cursor: pointer;
 }
 .user__comments svg {
-  stroke: black;
+  stroke: #4652b1;
   width: 15px;
   height: 15px;
   fill: #959595;
   transition: all 0.3s ease-in-out;
 }
 .user__comments:hover svg {
-  fill: black;
+  fill: #4652b1;
   stroke: #959595;
 }
 .user__like {
@@ -355,7 +363,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .user__like:hover svg {
-  stroke: black;
+  stroke: #4652b1;
 }
 .user__text {
   color: #959595;
@@ -364,7 +372,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .user__comments:hover .user__text, .user__like:hover .user__text {
-  color: black;
+  color: #4652b1;
 }
 
 /*media*/
